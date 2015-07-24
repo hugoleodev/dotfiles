@@ -10,34 +10,3 @@
 
 fresh freshshell/fresh bin/fresh --bin
 
-# prezto
-fresh sorin-ionescu/prezto . --file=~/.zprezto/
-fresh zsh-users/zsh-history-substring-search . --file=zprezto/modules/history-substring-search/external/
-fresh zsh-users/zsh-syntax-highlighting . --file=zprezto/modules/syntax-highlighting/external/
-fresh zsh-users/zaw . --file=~/.zaw/
-
-# zpreztorc
-fresh sorin-ionescu/prezto runcoms/zpreztorc  --file
-
-# zlogin, zlogout, zshenv
-fresh sorin-ionescu/prezto runcoms/zlogin --file
-fresh sorin-ionescu/prezto runcoms/zlogout --file
-# fresh sorin-ionescu/prezto runcoms/zshenv --file
-
-# completion
-fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
-
-# prompt
-#fresh zshrc/prompt --file=prompt/
-
-# zshrc
-fresh-options --file=~/.zshrc --marker --ignore-missing
-  # prezto
-  fresh sorin-ionescu/prezto runcoms/zshrc
-  # other
-  fresh zshrc
-  fresh twe4ked/dotfiles shell/zsh/completion.zsh
-  fresh freshshell/fresh contrib/source-build.sh
-  fresh zshrc/dedup-path
-  fresh zshrc/zaw
-fresh-options
